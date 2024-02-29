@@ -24,7 +24,7 @@ android {
   compileSdkVersion getExtOrIntegerDefault('compileSdkVersion')
   buildToolsVersion getExtOrDefault('buildToolsVersion')
   buildFeatures.buildConfig true
-  namespace 'org.reactnative.maskedview'
+  namespace 'com.reactnativecommunity.picker'
 
   defaultConfig {
     minSdkVersion getExtOrIntegerDefault('minSdkVersion')
