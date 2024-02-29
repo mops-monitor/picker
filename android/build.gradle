@@ -23,11 +23,18 @@ apply plugin: 'com.android.library'
 android {
   compileSdkVersion getExtOrIntegerDefault('compileSdkVersion')
   buildToolsVersion getExtOrDefault('buildToolsVersion')
+  buildFeatures.buildConfig true
+  namespace 'org.reactnative.maskedview'
 
   defaultConfig {
     minSdkVersion getExtOrIntegerDefault('minSdkVersion')
     targetSdkVersion getExtOrIntegerDefault('targetSdkVersion')
     vectorDrawables.useSupportLibrary=getExtOrDefault('vector_drawable_use_support_library')
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_11
+    targetCompatibility JavaVersion.VERSION_11
   }
 }
 
